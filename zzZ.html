@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>qqq</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+	   	<ul class="nav navbar-nav">
+			<li><a>p1801</a></li>
+		</ul>
+		<button id="hello" type="button" class="btn btn-primary btn-lg  navbar-nav navbar-right myul" data-toggle="modal" data-target="#myModal">
+		  登录
+		</button>
+	</nav>
+	<script>
+			$('#myModal').on('shown.bs.modal', function () {
+	  			$('#myInput').focus()
+			})
+			<script>
+     $(function(){
+     	$('#hello1').blur(function(){
+     		if ($(this).val()!='p1801')
+     		{
+					$("#zh>.glyphicon").removeClass("glyphicon-ok");
+					$("#zh>.glyphicon").addClass("glyphicon-remove");
+					$('#x3').removeAttr('type')
+					}
+     		
+ 		else{
+     			$("#zh>.glyphicon").removeClass("glyphicon-remove");
+					$("#zh>.glyphicon").addClass("glyphicon-ok");
+     		
+     		}
+     	})
+     	$('#hello2').blur(function(){
+     		if ($(this).val()!='123456')
+     		{
+					$("#mm>.glyphicon").removeClass("glyphicon-ok");
+					$("#mm>.glyphicon").addClass("glyphicon-remove");
+					$('#x3').removeAttr('type')
+     		}
+     		else{
+     			$("#mm>.glyphicon").removeClass("glyphicon-remove");
+					$("#mm>.glyphicon").addClass("glyphicon-ok");
+     		
+     		}
+     	})
+     })
+</script>
+
+	</script>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+				<div class="form-group has-success  has-feedback">
+					<label class="control-label">请输入用户名</label>
+					<input id="hello1" type="text" class="form-control" name="">
+					<span class="glyphicon  form-control-feedback" ></span>
+				</div>
+				<div class="form-group has-success has-feedback">
+					<label class="control-label">请输入密码</label>
+					<input id="hello2" type="password" class="form-control" name="">
+					<span class="glyphicon  form-control-feedback" ></span>
+					<span class="help-block">恭喜你输入正确</span>
+				</div>
+				<button id="login" class="form-control btn btn-primary">登录</button>
+	     </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
